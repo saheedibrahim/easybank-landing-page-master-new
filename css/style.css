@@ -196,7 +196,7 @@ p{
     padding-bottom: 10px;
 }
 .image-heading:hover{
-    background-color: #86C2AC;
+    color: #86C2AC;
     cursor: pointer;
 }
 .body-images{
