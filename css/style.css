@@ -6,12 +6,14 @@
     list-style-type: none;
 }
 p{
-    font-size: 18px;
+    /* font-size: 18px; */
+    color: rgba(0, 0, 0, 0.3);
 }
 .container{
     padding-left: max(13%);
     padding-right: max(13%);
 }
+
 .header{
     position: relative;
     width: 100%;
@@ -60,25 +62,20 @@ p{
     z-index: 2;
     right: 0;
 }
-
-
 .hamburger:before, .hamburger:after{
     position: absolute;
     content: "";
+    width: 30px;
     height: 4px;
     background-color: black;
     right: 0;
     border-radius: 10px;
 }
-
 .hamburger:before{
     top: -10px;
-    width: 20px;
 }
 .hamburger:after{
     top: 10px;
-    width: 25px;
-    margin-bottom: 40px;
 } 
 .toggle-menu{
     position: absolute;
@@ -88,6 +85,8 @@ p{
     opacity: 0;
 }
 .hamburger, .toggle-menu{
+    right: 0;
+    position: absolute;
     display: none;
 }
 .navigation input:checked ~ .hamburger{
@@ -109,9 +108,9 @@ p{
     margin-top: 20px;
     box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
-.header .Request-button{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.header-request-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .Request-button{
@@ -119,6 +118,7 @@ p{
     padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
+    color: #ffffff;
 }
 .Next-generation{
     position: relative;
@@ -143,6 +143,7 @@ p{
     height: 500px;
 }
 #Next-generation{
+    color: #000000;
     font-size: 40px;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -157,6 +158,7 @@ p{
 .easybank{
     padding-top: 40px;
     font-size: 30px;
+    color: #000000;
 }
 .banking-icon{
     float: left;
@@ -210,11 +212,12 @@ p{
     padding-bottom: 5px;
 }
 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     background-color: #2D314E;
     padding-top: 10px;
-}
-.footer-left{
-    float: left;
 }
 .footer-logo{
     filter: brightness(550%);
@@ -226,10 +229,10 @@ p{
 .footer-items li a{
     color: #ffffff;
 }
-.footer-items li:hover{
-    background-color: #308C79;
+.footer-items li a:hover{
+    color: #308C79;
 }
-.all-rights, .all-rights .Request-button{
+.all-rights .Request-button{
     float: right;
 }
 .copyright{
@@ -255,7 +258,6 @@ p{
         background: #ffffff;
         text-align: center;
         top: 40px;
-        /* right: -500px; */
         display: none;
         height: 300px;
         width: 300px;
@@ -282,7 +284,7 @@ p{
     .mockups-image{
         width: 100%;
     }
-    .body-image-box, .banking-icon, .leverage, .banking-icon:last-child, .footer-left, .all-rights, .copyright,
+    .body-image-box, .banking-icon, .leverage, .banking-icon:last-child, .copyright,
      .all-rights .Request-button{
         float: none;
         width: 100%;
@@ -291,15 +293,15 @@ p{
     .banking-icon, .Next-generate, .why-choose, .footer{
         text-align: center;
     }
+    .footer{
+        display: block;
+    }
     .footer-items li{
-        margin-left: 0;
-        line-height: 30px;
+        /* margin-left: 0;
+        line-height: 30px; */
     }
     .body-image-box{
         margin-bottom: 20px;
-    }
-    .header-lists{
-        float: right;
     }
     .all-rights{
         margin-top: 20px;
