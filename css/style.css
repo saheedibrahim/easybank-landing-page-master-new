@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
 }
-p, li a{
+p{
     /* font-size: 18px; */
     color: rgba(0, 0, 0, 0.3);
 }
@@ -20,6 +20,8 @@ p, li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .header-logo a{
     display: block;
@@ -36,19 +38,25 @@ p, li a{
 .menu{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* border: 5px solid; */
+    /* padding-bottom: 20px; */
+    /* justify-content: center; */
+    /* align-items: center; */
     z-index: 1;
 }
 .menu li a{
-    padding: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* width: 30px; */
+    /* border: 5px solid; */
     display: block;
     font-size: 18px;
     line-height: 1;
     color: rgba(0, 0, 0, 0.3);
 }
 .menu li a:hover{
-    box-shadow: 0 -5px 0 green inset;
+    box-shadow: 0 -4px 0 green inset;
     color: #000000;
 
     /* 50px 0 0 rgba(255, 255, 255, 0.03) inset; */
@@ -58,8 +66,8 @@ p, li a{
  .hamburger{
     position: relative;
     width: 30px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -69,8 +77,8 @@ p, li a{
     position: absolute;
     content: "";
     width: 30px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
     right: 0;
     border-radius: 10px;
 }
@@ -112,8 +120,6 @@ p, li a{
     box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
 .header-request-button{
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .Request-button{
@@ -132,24 +138,29 @@ p, li a{
     background-size: 50%;
 } 
 .Next-generate{
-    margin-right: 615px;
+    margin-right: 600px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.Next-generate p{
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 .mockups-image-box{
     position: absolute;
     right: 0;
-    max-width: 680px;
+    max-width: 640px;
     overflow-x: hidden;
 }
 .mockups-image{
     /* width: 600px; */
-    margin-top: -100px;
+    margin-top: -120px;
     /* height: 500px; */
 }
 #Next-generation{
     color: #000000;
-    font-size: 40px;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    font-size: 50px;
+    padding-bottom: 30px;
 }
 .Next-generate-button{
     padding-top: 30px;
@@ -157,6 +168,12 @@ p, li a{
 }
 .why-choose{
     background-color: #F4F5F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.why-choose-left{
+    /* padding-top: 50px; */
+    padding-bottom: 30px;
 }
 .easybank{
     padding-top: 40px;
@@ -186,16 +203,20 @@ p, li a{
 }
 .Latest-Articles{
     background-color: #FAFAFA;
+    padding-bottom: 100px;
 }
 .body-image-box{
     float: left;
-    width: 24%;
-    margin-right: 8px;
+    width: 22%;
+    margin-right: 24px;
     background-color: #FFFFFF;
 }
-.Latest-Articles h1{
-    padding-top: 20px;
-    padding-bottom: 10px;
+.Latest-Article p{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    /* color: black; */
 }
 .image-heading{
     padding-bottom: 10px;
@@ -252,8 +273,11 @@ p, li a{
 }
 @media (max-width: 600px){
     .container{
-        padding-left: max(6%);
-        padding-right: max(6%);
+        padding-left: max(7%);
+        padding-right: max(7%);
+    }
+    .hamburger, .hamburger:before, .hamburger:after{
+        background-color: rgba(0, 0, 0, 0.3);
     }
     .hamburger, .toggle-menu{
         display: block;
@@ -267,11 +291,11 @@ p, li a{
         text-align: center;
         top: 40px;
         display: none;
-        height: 270px;
-        width: 80%;
+        height: 320px;
+        width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     .menu li{
         width: 100%;
@@ -283,20 +307,22 @@ p, li a{
         background-position: -10% -30%;
         background-size: 800px 380px;
     }
-    .mockups-image{
-        height: 400px;
+    .Next-generate{
+        margin-right: 600px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .header .Request-button{
         display: none;
     }
     .mockups-image-box{
         position: static;
-    } 
-    .Next-generate{
-        margin-right: 0;
     }
     .mockups-image{
         width: 100%;
+    }
+    .Next-generate{
+        margin-right: 0;
     }
     .body-image-box, .banking-icon, .leverage, .banking-icon:last-child, .copyright,
      .all-rights .Request-button{
